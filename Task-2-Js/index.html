@@ -72,12 +72,14 @@
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
                 data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fa-solid fa-chevron-left flechita"></i></span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"><i
+                        class="fa-solid fa-chevron-left flechita"></i></span>
                 <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
                 data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"><i class="fa-solid fa-chevron-right flechita"></i></span>
+                <span class="carousel-control-next-icon" aria-hidden="true"><i
+                        class="fa-solid fa-chevron-right flechita"></i></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
@@ -87,12 +89,12 @@
 
     <main>
 
-        
+
         <!-- FORMULARIO -->
         <form action="" class="formulario-index">
             <!-- <div class="container">
             <div class="row"> -->
-                <!-- <div class="col-1">
+            <!-- <div class="col-1">
                     <label for="categoria">Category</label>
                     <input type="checkbox" id="categoria">
                 </div>
@@ -122,98 +124,74 @@
                     <button type="submit" title="buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div> -->
 
-                <div>
-                    <label for="categoria">Category</label>
-                    <input type="checkbox" id="categoria">
-                </div>
+            <div>
+                <label for="categoria">Food Fair</label>
+                <input type="checkbox" id="categoria">
+            </div>
 
-                <div>
-                    <label for="categoria1">Category</label>
-                    <input type="checkbox" id="categoria1">
-                </div>
+            <div>
+                <label for="categoria1">Museum</label>
+                <input type="checkbox" id="categoria1">
+            </div>
 
-                <div>
-                    <label for="categoria2">Category</label>
-                    <input type="checkbox" id="categoria2">
-                </div>
+            <div>
+                <label for="categoria2">Costume Party</label>
+                <input type="checkbox" id="categoria2">
+            </div>
 
-                <div>
-                    <label for="categoria3">Category</label>
-                    <input type="checkbox" id="categoria3">
-                </div>
+            <div>
+                <label for="categoria3">Music Concert</label>
+                <input type="checkbox" id="categoria3">
+            </div>
 
-                <div>
-                    <label for="categoria4">Category</label>
-                    <input type="checkbox" id="categoria4">
-                </div>
+            <div>
+                <label for="categoria4">Race</label>
+                <input type="checkbox" id="categoria4">
+            </div>
 
-                <div>
-                    <input type="search" id="categoria5" title="buscar" class="input-buscador">
-                    <button type="submit" title="buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </div>
-            
+            <div>
+                <label for="categoria5">Book Exchange</label>
+                <input type="checkbox" id="categoria5">
+            </div>
+
+            <div>
+                <label for="categoria6">Cinema</label>
+                <input type="checkbox" id="categoria6">
+            </div>
+
+            <div>
+                <input type="search" id="" title="buscar" class="input-buscador">
+                <button type="submit" title="buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+
             <!-- </div>
         </div> -->
         </form>
 
 
         <!-- CARDS -->
-        <div class="container">
-            <div class="row">
+        <div class="container contenedor-cards d-flex flex-wrap gap-0 justify-content-center" id="contenedor-cards">
 
-                <div class="col-3 columna-card">
+            <div class="row"> <!--fila 1-->
+                <!-- <div class="col-3 columna-card">
                     <div class="card" style="width: 18rem;">
                         <img src="./assets/Concierto de musica1.jpg" class="card-img-top img-fluid" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title">${events[i].name}</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
-                            <p>Price: $1500</p>
+                            <div class="info-adicional">
+                                <p>Date:</p>
+                                <p>Place:</p>
+                            </div>
+                            <p class="precio">Price: $1500</p>
                             <a href="details.html" class="btn btn-primary">More info</a>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-3 columna-card">
-                    <div class="card" style="width: 18rem;">
-                        <img src="./assets/Cine7.jpg" class="card-img-top img-fluid" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <p>Price: $1500</p>
-                            <a href="details.html" class="btn btn-primary">More info</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-3 columna-card">
-                    <div class="card" style="width: 18rem;">
-                        <img src="./assets/Fiesta de disfraces1.jpg" class="card-img-top img-fluid" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <p>Price: $1500</p>
-                            <a href="details.html" class="btn btn-primary">More info</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-3 columna-card">
-                    <div class="card" style="width: 18rem;">
-                        <img src="./assets/Feria de comidas7.jpg" class="card-img-top img-fluid" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <p>Price: $1500</p>
-                            <a href="#" class="btn btn-primary">More info</a>
-                        </div>
-                    </div>
-                </div>
+                </div> -->
 
             </div>
+
         </div>
 
 
@@ -221,14 +199,17 @@
             <div class="container">
                 <div class="row">
                     <div class="col-1">
-                        <a href="https://www.instagram.com/" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank" title="Instagram"><i
+                                class="fa-brands fa-instagram"></i></a>
                     </div>
                     <div class="col-1">
-                        <a href="https://www.facebook.com" target="_blank" title="Facebook"><i class="fa-brands fa-square-facebook"></i></a>  
+                        <a href="https://www.facebook.com" target="_blank" title="Facebook"><i
+                                class="fa-brands fa-square-facebook"></i></a>
                     </div>
                     <div class="col-1">
-                        <a href="https://www.whatsapp.com" target="_blank" title="Whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
-                        
+                        <a href="https://www.whatsapp.com" target="_blank" title="Whatsapp"><i
+                                class="fa-brands fa-whatsapp"></i></a>
+
                     </div>
                     <div class="col-9 cohorte">
                         <p>cohorte FE16-TN</p>
@@ -240,9 +221,13 @@
 
     </main>
 
+    <script src="./scripts/data.js"></script>
+    <script src="./scripts/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
 </body>
+
+
 
 </html>

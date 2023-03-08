@@ -85,9 +85,10 @@ form{
 }
 
 .card img{
-    width: 250px;
+    width: 260px;
     height: 150px;
     margin: auto;
+    object-fit: cover;
 }
 
 .card-body{
@@ -95,11 +96,45 @@ form{
 }
 
 .card{
-    width: 250px !important;
+    width: 260px !important;
+    /* height: 400px; */
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
+/* .card{
+    width: 270px !important;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+} */
+
+
+.contenedor-cards{
+    flex-wrap: wrap !important;
+}
+
+.info-adicional{
+    color: rgba(0, 0, 0, 0.607);
+    text-align: left;
+    line-height:0.5; /**espacio entre parrafos**/
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.card-title{
+    text-align: center;
+}
+
+.card-text{
+    text-align: justify;
+    min-height: 100px;
+    font-size: 15px;
+}
+
+.precio{
+    color: rgba(0, 0, 255, 0.564);
+}
 
 /************** CARD-DETAILS ******************/
 .card-details{
