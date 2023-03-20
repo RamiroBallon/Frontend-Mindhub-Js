@@ -15,7 +15,7 @@ header nav{
 }
 
 .logo{
-    width: 20rem;
+    width: 60%;
 }
 
 ul li{
@@ -26,11 +26,16 @@ ul li{
 }
 
 .navbar-li{
-    margin-left: 23rem;
+    
+}
+
+.navbar{
+    justify-content: space-between
 }
 
 .nav-link{
     color: rgba(0, 0, 0, 0.85) !important;
+   
 }
 
 .navbar-li a:hover{
@@ -70,6 +75,7 @@ form{
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: black;
+    width: 100%;
 }
 
 .formulario-index{
@@ -105,10 +111,13 @@ form{
 }
 
 .card{
+    
     width: 260px !important;
     /* height: 400px; */
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: 7px;
+    margin-right: 7px;
 }
 
 /* .card{
@@ -119,9 +128,12 @@ form{
 } */
 
 
-.contenedor-cards{
+.contenedor-cards, #contenedor-cards{
+    display: flex;
     flex-wrap: wrap !important;
+    width: 100%;
 }
+
 
 .info-adicional{
     color: rgba(0, 0, 0, 0.607);
@@ -155,6 +167,8 @@ form{
     margin-bottom: 100px !important;
     background-color: whitesmoke;
 }
+
+
 .card-details img{
     width: 300px;
     height: 250px;
@@ -211,6 +225,54 @@ form{
 
 .price{
     color: rgba(0, 0, 255, 0.408);
+}
+
+@media (max-width: 900px) {
+    .card-details{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 50% !important;
+        height: 600px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-details{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .card-body-details{
+        text-align: center;
+        width: 100% !important;
+        padding-top: 29px !important;
+        width: 100%;
+    }
+
+    .card-details img{
+        width: 100%;
+        height: 250px;
+        margin: auto;
+        object-fit: cover;
+        /* overflow: hidden; */
+    }
+    
+    .description{
+    padding-top: 0px;
+    line-height: 1.3;
+    font-size: 15px;
+    text-align: left;
+    height: 50px;
+}
+
+.detalles{
+    margin-top: 20%;
+    text-align: left;
+    font-size: 14px;
+    line-height: 0.5;
+    color: rgba(0, 0, 0, 0.607);
+}
 }
 
 

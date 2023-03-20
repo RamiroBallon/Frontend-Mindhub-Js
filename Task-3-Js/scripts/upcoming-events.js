@@ -1,4 +1,4 @@
-///////CONSTANTES CAPTURADAS Y VARIABLES////////////////
+/////CONSTANTES CAPTURADAS Y VARIABLES////////////////
 console.log("Eventos futuros")
 const contenedor=document.querySelector("#contenedor-cards") /*getElementById(contenedor-cards)*/ 
 const events=data.events
@@ -45,7 +45,7 @@ function mostrarCards(arrayDatos){
                     <p>Category: ${event.category}</p>
                 </div>
                     <p class="precio">Price: $${event.price}</p>
-                    <a href="details.html?id=${event._id}" class="btn btn-primary">More info</a>
+                    <a href="./details.html?id=${event._id}" class="btn btn-primary">More info</a>
                 </div>
             </div>
         </div>`

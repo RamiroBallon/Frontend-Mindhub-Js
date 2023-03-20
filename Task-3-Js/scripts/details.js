@@ -42,7 +42,7 @@ function contenedorCardsDetalladas(evento) {
         </div>
         <p class="price">Price: $${evento.price}</p>     
     
-    <a href="index.html" class="volver" title="volver"><i class="fa-solid fa-xmark"></i></a>
+    <a href="./index.html" class="volver" title="volver"><i class="fa-solid fa-xmark"></i></a>
 </div>`;
     container.innerHTML = card;
 }

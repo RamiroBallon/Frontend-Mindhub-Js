@@ -75,7 +75,7 @@ function mostrarCards(arrayDatos){
     let tarjetas = ''
     arrayDatos.forEach(event => {
         tarjetas += //toma la variable y le asigna cada tarjeta, sin esto no funciona
-        `<div class="col-3" data-id="${event._id}">
+        `<div class="" data-id="${event._id}">
             <div class="card" style="width: 18rem;">
                 <img src="${event.image}" class="card-img-top img-fluid" alt="...">
                 <div class="card-body">
@@ -87,7 +87,7 @@ function mostrarCards(arrayDatos){
                     <p>Category: ${event.category}</p>
                 </div>
                     <p class="precio">Price: $${event.price}</p>
-                    <a href="/details.html?id=${event._id}" class="btn btn-primary more-info">More info</a>
+                    <a href="./details.html?id=${event._id}" class="btn btn-primary more-info">More info</a>
                 </div>
             </div>
         </div>`
