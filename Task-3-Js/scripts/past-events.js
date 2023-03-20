@@ -1,4 +1,4 @@
-///////CONSTANTES CAPTURADAS Y VARIABLES////////////////
+///////CONSTANTES CAPTURADAS Y VARIABLESs////////////////
 console.log("Eventos Pasados")
 const contenedor=document.querySelector("#contenedor-cards") /*getElementById(contenedor-cards)*/ 
 const events=data.events

@@ -8,6 +8,8 @@ const currentDate = data.currentDate
 //el elemento, luego agregarle el escuchador de eventos, el evento que quiero escuchar, asociarlo con una funcion(las acciones que quiero realizar cuando se escuche ese evento)
 const input = document.getElementById('input')
 
+
+
 // console.log("index=>cards:", contenedor)
 // console.log("data.js=>events:", events)
 // console.log("currentDate:", currentDate)
@@ -73,7 +75,7 @@ function mostrarCards(arrayDatos){
     let tarjetas = ''
     arrayDatos.forEach(event => {
         tarjetas += //toma la variable y le asigna cada tarjeta, sin esto no funciona
-        `<div class="col-3">
+        `<div class="col-3" data-id="${event._id}">
             <div class="card" style="width: 18rem;">
                 <img src="${event.image}" class="card-img-top img-fluid" alt="...">
                 <div class="card-body">
@@ -85,7 +87,7 @@ function mostrarCards(arrayDatos){
                     <p>Category: ${event.category}</p>
                 </div>
                     <p class="precio">Price: $${event.price}</p>
-                    <a href="details.html?id=${event._id}" class="btn btn-primary">More info</a>
+                    <a href="/details.html?id=${event._id}" class="btn btn-primary more-info">More info</a>
                 </div>
             </div>
         </div>`
@@ -93,6 +95,13 @@ function mostrarCards(arrayDatos){
     contenedor.innerHTML = tarjetas
 }
 
+// contenedor.addEventListener('click', (event) => {
+//   if (event.target.classList.contains('more-info')) {
+//     const card = event.target.closest('.col-3');
+//     const eventId = card.dataset.id;
+//     window.location.href = `/details.html?id=${eventId}`;
+//   }
+// });
 //funcion para filtrar/mostrar tarjetas segun el buscador  DEVUELVE UN ARRAY
 function filtrarPorTexto(arrayDatos, texto){
     let arrayFiltrado = arrayDatos.filter(elemento => elemento.name.toLowerCase().includes(texto.toLowerCase()))
@@ -155,29 +164,14 @@ function filtroCruzado(){
 //     // contenedorCardsDetalladas(evento)
 // })
 
-function contenedorCardsDetalladas(evento){
-    let container = document.getElementById("contenedorCardsDetalladas");
-    let card = "";
-    card = `<div class="card card-details">
-    <img src="./assets/Concierto de musica1.jpg" class="card-img-top img-fluid image" alt="...">
-    <div class="card-body card-body-details">
-        <h5 class="card-title name">${evento.name}</h5>
-        <p class="description">${evento.description}.</p>
-        <div class="detalles">
-            <p class="category">Category:${evento.category}</p>
-            <p class="place">Place:${evento.place}</p>
-            <p class="capacity">Capacity:${evento.capacity}</p>
-            <p class="assistance">Assistance or stimate:${evento.assistance}</p>
-            <p class="date">Date:${evento.date}</p>
-        </div>
-        <p class="price">Price: ${evento.price}</p>     
-    </div>
-    <button class="btn btn-primary btn-comprar">Comprar</button>  
-           </div>
-    <a href="index.html" class="volver" title="volver"><i class="fa-solid fa-xmark"></i></a>
-</div>`;
-    container.innerHTML = card;
-  }
+
+
+
+
+
+console.log ('documento', [document])
+
+
 
 
 
